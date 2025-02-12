@@ -1,0 +1,51 @@
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  border: none;
+}
+
+.default {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  text-overflow: ellipsis;
+}
+
+.success {
+  background-color: #07c06a;
+  color: white;
+}
+
+.disabled {
+  background-color: #aaaaaa;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.oneLine {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.twoLines {
+  display: block;
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+}
