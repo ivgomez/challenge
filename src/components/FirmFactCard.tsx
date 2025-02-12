@@ -13,11 +13,9 @@ interface Props {
 const FirmFactCard: React.FC<Props> = ({ variant, buttonVariant, showIcon, textLines, position }) => {
   return (
     <div className={`${styles.card} ${styles[variant]}`}>
-      <div className={`${styles.buttonWrapper} ${styles[position]}`}>
-        <Button variant={buttonVariant} showIcon={showIcon} textLines={textLines}>
-          {textLines === 2 ? "This is a two line button that terminates with ..." : "This is a one line button"}
-        </Button>
-      </div>
+      <Button variant={buttonVariant} showIcon={showIcon} textLines={textLines} position={position}>
+        {textLines === 2 ? "This is a two line button that terminates with ..." : "This is a one line button"}
+      </Button>
     </div>
   );
 };
